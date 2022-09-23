@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 280px;
+    height: 300px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+.todolist-box{
+    width: 95%;
+    height: 100px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+    margin: auto;
+    border-radius: 7px;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 10px auto;
+    padding: 5px;
+}
+#add-input-task{
+    outline: none;
+    border: none;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+    border-radius: 4px 0 0 4px;
+}
+.add-box{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    }
+    #remove-task{
+        background-color: white;
+        font-size: 13.5px;
+    }
+#btn-create{
+    border: none;
+    padding: 3px 7px;
+    background-color: chartreuse;
+    cursor: pointer;
+    border-radius: 6px;
+    color: white;
+}
+#btn-create:hover{
+background-color: green;
+transition: 1s;
+}
+#btn-delete{
+    background-color: red;
+    border-radius: 7px;
+    padding: 3px 6px;
+    border: none;
+    margin-left: 10px;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#btn-delete:hover{
+    background-color: orange;
+    color: black;
+    transition: 1s;
+}
+#btn-delete:active{
+    background-color: black;
+    box-shadow: 0px 0px 3px 2px gray;
+    transition: none;
+    color: white;
+}
+.added-tasks > div {
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+    width: 95%;
+    border-radius: 6px;
+    margin: 10px auto;
+}
+.task{
+    margin-left: 10px;
+    color: purple;
+}
+.taskStyle{
+    text-decoration: line-through;
+    color: green;
+}
+.box-of-btns{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-of-btns > button{
+    width: 22%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-of-btns > button:first-child{
+    background-color: green;
+}
+.box-of-btns > button:nth-child(2){
+    background-color: gold;
+}
+.box-of-btns > button:nth-child(3){
+    background-color: red;
+}
+.box-of-btns > button:last-child{
+    background-color: dodgerblue;
+}
+.container{
+    height: 310px;
+    overflow-y: auto;
+}
